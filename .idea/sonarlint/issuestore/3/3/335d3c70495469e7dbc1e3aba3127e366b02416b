@@ -1,0 +1,24 @@
+
+u
+java:S1450 "WRemove the "jButton1" field and declare it as a local variable in the relevant methods.(å……¶8õŸìÏó0
+~
+java:S1450¡"[Remove the "jScrollPane1" field and declare it as a local variable in the relevant methods.(¤á×ÿÿÿÿÿ8£™ôúò0
+\
+java:S1161~":Add the "@Override" annotation above this method signature(ÍŸÏ†ùÿÿÿÿ8õŸìÏó0
+n
+java:S2095H"QUse try-with-resources or close this "CloseableHttpClient" in a "finally" clause.(ıê”Ê8‚·Æ×ó0
+Ê
+java:S1598"¬This file "Salario.java" should be located in "service" directory, not in "C:\Users\Admin\Documents\NetBeansProjects\nominaClient\src\main\java\com\mycompany\nominaclient".(¨•šŠ8‚·Æ×ó0
+b
+java:S1128"@Remove this unused import 'javax.swing.table.DefaultTableModel'.(è†åûÿÿÿÿ8‚·Æ×ó0
+K
+java:S1128")Remove this unused import 'java.net.URL'.(ñìÁ„üÿÿÿÿ8‚·Æ×ó0
+]	java:S125!"<This block of commented-out lines of code should be removed.(õ–ôÄùÿÿÿÿ8‚·Æ×ó0
+]	java:S125-"<This block of commented-out lines of code should be removed.(öÈ³ÿÿÿÿÿ8‚·Æ×ó0
+Z	java:S106R"9Replace this use of System.out or System.err by a logger.(®ıáëûÿÿÿÿ8‚·Æ×ó0
+Z	java:S106X"9Replace this use of System.out or System.err by a logger.(’Ñú¼úÿÿÿÿ8‚·Æ×ó0
+U
+java:S1197Z"8Move the array designator from the variable to the type.(ôÅÿ…8‚·Æ×ó0
+]	java:S125["<This block of commented-out lines of code should be removed.(¬İ’»ıÿÿÿÿ8‚·Æ×ó0
+F
+java:S1481Z")Remove this unused "data" local variable.(ôÅÿ…8‚·Æ×ó0
