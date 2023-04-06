@@ -129,13 +129,13 @@ public class Main extends javax.swing.JFrame {
 
         nominas.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null}
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null}
             },
             new String [] {
-                "horatrabajadas", "totalporentrega", "bonoporhoras", "retenciones", "sueldo"
+                "horatrabajadas", "totalporentrega", "personal", "bonoporhoras", "retenciones", "sueldo"
             }
         ));
         table.setViewportView(nominas);
@@ -144,11 +144,11 @@ public class Main extends javax.swing.JFrame {
         panelTable.setLayout(panelTableLayout);
         panelTableLayout.setHorizontalGroup(
             panelTableLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 447, Short.MAX_VALUE)
+            .addGap(0, 583, Short.MAX_VALUE)
             .addGroup(panelTableLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(panelTableLayout.createSequentialGroup()
                     .addGap(9, 9, 9)
-                    .addComponent(table, javax.swing.GroupLayout.PREFERRED_SIZE, 428, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(table, javax.swing.GroupLayout.PREFERRED_SIZE, 564, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
         panelTableLayout.setVerticalGroup(
@@ -196,7 +196,7 @@ public class Main extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(panelTable, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(543, Short.MAX_VALUE))
+                .addContainerGap(472, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -236,8 +236,15 @@ public class Main extends javax.swing.JFrame {
            DefaultTableModel modeltable=(DefaultTableModel) nominas.getModel();
            modeltable.getDataVector().removeAllElements();
            JsonNode result=salario.getSalario(Integer.parseInt(mes.getText()));
+             System.out.println("result");
+             System.out.println(result);
            result.forEach(item->{
-             Object data[]={item.get("horatrabajadas"),item.get("totalporentrega"),2,3,2};
+             Object data[]={item.get("horatrabajadas"),
+                 item.get("totalporentrega"),
+                 item.get("personal"),
+                 item.get("bonoporhoras"),
+                 item.get("retenciones"),
+                 item.get("sueldo")};
              modeltable.addRow(data);
                 
             });

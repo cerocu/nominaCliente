@@ -320,18 +320,18 @@ public class personal extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1MouseClicked
 
     private void choferMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_choferMouseClicked
-     deseleccionTodos();
+    // deseleccionTodos();
      chofer.setSelected(true);
         // TODO add your handling code here:
     }//GEN-LAST:event_choferMouseClicked
 
     private void cargadorMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cargadorMouseClicked
-       deseleccionTodos();
+      // deseleccionTodos();
      cargador.setSelected(true);  // TODO add your handling code here:
     }//GEN-LAST:event_cargadorMouseClicked
 
     private void auxiliarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_auxiliarMouseClicked
-       deseleccionTodos();
+       //deseleccionTodos();
      auxiliar.setSelected(true);  // TODO add your handling code here:
     }//GEN-LAST:event_auxiliarMouseClicked
     private void deseleccionTodos(){

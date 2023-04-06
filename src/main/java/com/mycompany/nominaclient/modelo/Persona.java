@@ -37,9 +37,9 @@ public Persona(){
 public Persona(personal personal){
     this.numero=Integer.parseInt(personal.getNumero().getText());
    
-    if(personal.getAuxiliar().isSelected())  
+    if(personal.getChofer().isSelected())  
         this.idrol=3;
-    if(personal.getAuxiliar().isSelected())  
+    if(personal.getCargador().isSelected())  
         this.idrol=1;
     if(personal.getAuxiliar().isSelected())  
         this.idrol=2;
